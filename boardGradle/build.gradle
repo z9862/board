@@ -21,11 +21,10 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-}
-	implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
+
 	compile('javax.servlet:jstl')
 	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
-	
+	implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'	
 }
 
 test {
